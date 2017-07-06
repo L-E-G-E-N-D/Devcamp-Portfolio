@@ -56,3 +56,4 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.3'
 
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'tool_devcamp_view', git: 'https://github.com/L-E-G-E-N-D/tool_devcamp_view'

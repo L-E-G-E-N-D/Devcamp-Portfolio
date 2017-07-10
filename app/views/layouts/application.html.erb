@@ -12,20 +12,26 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    
-    <%= render "shared/nav", location: 'top' %>
-    <%= login_helper %>
-    
-    <%= yield %>
-    
-    <%= copyright_generator %>
-    
-    <%= source_helper("application") %>
+        <div class="site-wrapper">
 
-    <% if session[:source] %>
-    <p>Thanks for visiting me from <%= session[:source] %></p>
-    <% end %>
+          <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+    
+              <%= render "shared/application_nav" %>
+    
+              <%= login_helper %>
+    
+              <%= yield %>
+    
+              <%= copyright_generator %>
+    
+              <%= source_helper("application") %>
+              
+            </div>
+            
+          </div>
+            
+        </div>
   </body>
 </html>

@@ -2,18 +2,14 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8 py-4">
-            <h4 class="text-white">About</h4>
-            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+            <h4 class="text-white">About Me</h4>
+            <p class="text-muted">Hello, and welcome to my portfolio page. This is written to show you what I have done in the past which might interest many people. Definitely, make sure to roam around my portfolio to get a gist about what I did, and what you can do to make your lives better.</p>
           </div>
           <div class="col-sm-4 py-4">
-            <h4 class="text-white">Contact</h4>
+            <h4 class="text-white">Explore</h4>
             <ul class="list-unstyled">
-              <li><%= link_to "Home", root_path, class:'text-white' %></li>
-          <li><%= link_to "About", about_me_path, class:'text-white' %></li>
-          <li><%= link_to "Contact", contact_path,class:'text-white' %></li>
-          <li><%= link_to "Blog", blogs_path, class:'text-white' %></li>
-          <li><%= link_to "Portfolio", portfolios_path, class:'text-white' %></li>
-          <li><%= login_helper 'text-white' %></li>
+              <%= nav_helper 'text-white', 'li' %>
+              <li><%= login_helper 'text-white' %></li>
             </ul>
           </div>
         </div>
@@ -21,7 +17,7 @@
     </div>
     <div class="navbar navbar-inverse bg-inverse">
       <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand">Album</a>
+        <a href="#" class="navbar-brand">Ojas Kulkarni</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

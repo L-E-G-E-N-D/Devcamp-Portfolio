@@ -29,7 +29,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
@@ -160,26 +159,20 @@ body {
     width: 55rem;
   }
 }
+
 /*
  * Custom Styles
  */
+
 .card-block {
   color: black;
   text-align: left;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
 }
+
 .auth-links a {
   color: black;
 }
-.contact-info {
-  margin-top: -250px;
-}
-.col-md-4 {
-  margin-bottom: 60px;
-}
+
 .register-text {
   text-align: right;
 }
@@ -189,14 +182,34 @@ body {
   margin: 0 auto;
   float: none;
 }
+
 .app-nav span {
   margin-left: 15px;
   margin-right: 15px;
 }
 
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('home_bg.png') no-repeat;
+  background-size: cover;
+}
 
-
-
+.app-footer {
+  color: white;
+}
+.cover-container {
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
 
 
 

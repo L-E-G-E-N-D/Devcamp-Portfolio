@@ -159,26 +159,20 @@ body {
     width: 55rem;
   }
 }
+
 /*
  * Custom Styles
  */
+
 .card-block {
   color: black;
   text-align: left;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
 }
+
 .auth-links a {
   color: black;
 }
-.contact-info {
-  margin-top: -250px;
-}
-.col-md-4 {
-  margin-bottom: 60px;
-}
+
 .register-text {
   text-align: right;
 }
@@ -188,10 +182,12 @@ body {
   margin: 0 auto;
   float: none;
 }
+
 .app-nav span {
   margin-left: 15px;
   margin-right: 15px;
 }
+
 #background {
   position: fixed;
   top: 50%;
@@ -206,12 +202,14 @@ body {
   background: image-url('home_bg.png') no-repeat;
   background-size: cover;
 }
+
 .app-footer {
   color: white;
 }
-
-
-
+.cover-container {
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
 
 
 

@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "gritter";
 
 /*
  * Globals
@@ -210,10 +211,12 @@ body {
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
 }
-
-
-
-
+.login > .card {
+  padding: 5px;
+}
+.card-block {
+  padding: 10px;
+}
 
 
 

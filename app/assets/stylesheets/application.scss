@@ -157,7 +157,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 60rem;
   }
 }
 
@@ -217,8 +217,16 @@ body {
 .card-block {
   padding: 10px;
 }
-
-
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+.tech-news a{
+  color: grey;
+}
+.tech-news > .card {
+ padding: 20px; 
+}
 
 
 

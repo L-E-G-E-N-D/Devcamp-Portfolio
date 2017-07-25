@@ -8,22 +8,21 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    
+
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-<body>
-
+  <body>
     <%= render 'shared/portfolio_nav' %>
     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 
- 
+    <%= yield %>
 
-      <%= yield %>
-  
-     <%= render 'shared/portfolio_footer' %>
-  
-      <%= source_helper("application") %>
-    </body>
+    <%= render 'shared/portfolio_footer' %>
+
+    <%= alerts %>
+
+    <%= source_helper("application") %>
+  </body>
 </html>

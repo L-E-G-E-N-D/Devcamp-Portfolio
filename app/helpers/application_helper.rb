@@ -8,62 +8,62 @@ module ApplicationHelper
       link_to "Logout", destroy_user_session_path, method: :delete, class: style
     end
   end
-  
+
   def source_helper(layout_name)
-    if session[:source] 
-      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout."
+    if session[:source]
+      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
       content_tag(:p, greeting, class: "source-greeting")
-    end 
+    end
   end
-  
+
   def copyright_generator
-    ToolDevcampView::Renderer.copyright 'Ojas Kulkarni', 'All Rights Reserved'
+    ToolDevcampView::Renderer.copyright 'Ojas Kulkarni', 'All rights reserved'
   end
-  
+
   def nav_items
     [
       {
-        url: root_path, 
+        url: root_path,
         title: 'Home'
       },
       {
-        url: about_me_path, 
+        url: about_me_path,
         title: 'About'
       },
       {
-        url: contact_path, 
+        url: contact_path,
         title: 'Contact'
       },
       {
-        url: blogs_path, 
-        title: 'Blogs'
+        url: blogs_path,
+        title: 'Blog'
       },
       {
-        url: portfolios_path, 
+        url: portfolios_path,
         title: 'Portfolio'
       },
       {
-        url: tech_news_path, 
+        url: tech_news_path,
         title: 'Developer News'
-      }
+      },
     ]
   end
-  
+
   def nav_helper style, tag_type
     nav_links = ''
-    
+
     nav_items.each do |item|
       nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style} #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
+    end
+
+    nav_links.html_safe
   end
-  
-  nav_links.html_safe
-  end
-  
+
   def active? path
     "active" if current_page? path
   end
-  
-   def alerts
+
+  def alerts
     alert = (flash[:alert] || flash[:error] || flash[:notice])
 
     if alert
@@ -72,7 +72,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Jordan Hudgens Portfolio", sticky: false)
+    js add_gritter(msg, title: "Ojas Kulkarni Portfolio", sticky: false)
   end
 
 end

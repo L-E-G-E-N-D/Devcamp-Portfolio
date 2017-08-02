@@ -227,8 +227,24 @@ body {
 .tech-news > .card {
  padding: 20px; 
 }
-
-
+.app-card-container {
+  color: #4a6459;
+  text-align: left;
+}
+.app-card-container > .card {
+  padding: 27px;
+}
+.profile-img {
+  border-radius: 1px;
+  margin-left: 40px;
+  margin-top: -10px;
+}
+.about-me-line {
+  margin-left: 60px;
+}
+.app-card-container a {
+  color: #4a6459;
+}
 
 
 

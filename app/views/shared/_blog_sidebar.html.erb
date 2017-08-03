@@ -1,13 +1,20 @@
 <div class="col-sm-3 offset-sm-1 blog-sidebar">
   <div class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p>Hello, welcome to my blogs page. I am a fifteen year old named <em>Ojas, also Elevate.</em> 
-    Feel free to roam around this website to get a giff of what I do, and what my interests are.
-    Check out the following links for updates.</p>
+    <p>Hello, welcome to my blogs page. I am a fifteen year old student named <em>Ojas, also Elevate.</em> Feel free to roam around this website to get a giff of what I do, and what my interests are. Check out the following links for updates.</p>
   </div>
   
+    <%= source_helper("alert alert-success blog-sidebar-source") %>
+
   <div class="sidebar-module">
-    <h4>More About Me</h4>
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+
+  <div class="sidebar-module">
+    <h4>Explore</h4>
       <ol class="list-unstyled social-links">
         <li><a href="https://github.com/L-E-G-E-N-D"><%= fa_icon "github" %></a></li>
         <li><a href="https://www.facebook.com/elevateYT/"><%= fa_icon "facebook" %></a></li>

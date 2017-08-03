@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
 
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
+    
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Josefin+Sans" rel="stylesheet">
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
@@ -17,15 +21,7 @@
 
     <%= render 'shared/blog_nav' %>
 
-    <!-- start of blog header -->
-    <div class="blog-header">
-      <div class="container">
-        <h1 class="blog-title">My Blog</h1>
-        <p class="lead blog-description">An example blog template built with Bootstrap.</p>
-        <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
-      </div>
-    </div>
-    <!-- end of blog header -->
+    <%= render "shared/blog_masthead" %>
 
     <div class="container">
 
@@ -38,8 +34,7 @@
         <%= render "shared/blog_footer" %>
         
         <%= alert %>
-
-        <%= source_helper("blog") %>
+        
     </div>
   </body>
 </html> 

@@ -45,7 +45,7 @@ module ApplicationHelper
       {
         url: tech_news_path,
         title: 'Developer News'
-      },
+      }
     ]
   end
 

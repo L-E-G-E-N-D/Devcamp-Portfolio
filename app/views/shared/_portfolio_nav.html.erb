@@ -4,6 +4,9 @@
           <div class="col-sm-8 py-4">
             <h4 class="text-white">About Me</h4>
             <p class="text-muted">Hello, and welcome to my portfolio page. This is written to show you what I have done in the past which might interest many people. Definitely, make sure to roam around my portfolio to get a gist about what I did, and what you can do to make your lives better.</p>
+            <% if logged_in?(:site_admin) %>
+              <%= link_to fa_icon('plus-circle'), new_portfolio_path, class: 'portfolio-edit-button' %>
+            <% end %>
           </div>
           <div class="col-sm-4 py-4">
             <h4 class="text-white">Explore</h4>

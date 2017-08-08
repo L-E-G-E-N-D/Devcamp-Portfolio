@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import "font-awesome";
 
 @font-face {
   font-family: 'Josefin Sans';
@@ -85,4 +86,11 @@ footer p {
 
 .portfolio-container {
   padding-top: 30px;
+}
+.portfolio-edit-button {
+  color: white;
+  font-size: 1.5em;
+}
+.portfolio-edit-button:hover {
+  color: grey;
 }

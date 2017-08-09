@@ -20,13 +20,9 @@
                             )
     %>
   </div>
-
   <div class="form-group">
-    <%= f.radio_button :status, 'draft' %>
-    <%= f.label :status, 'Draft' %>
-    
-    <%= f.radio_button :status, 'published' %>
-    <%= f.label :status, 'Published' %>
+    <input type="checkbox" <%= f.radio_button :status, 'draft' %>
+        <label class="pure-toggle brick"></label><span class="fontawesome-ok"></span><span class="fontawesome-remove"></span>
   </div>
   <div class="form-group">
     <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: "Write your thoughts" %>

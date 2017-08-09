@@ -206,3 +206,63 @@ h6, .h6 {
 .btn {
   font-family: 'Josefin Sans', sans-serif;
 }
+
+/* CHECKBOX STYLES */
+
+.pure-toggle {
+  cursor: pointer;
+  font-size: 1.5em;
+  width: 6em;
+  height: 3em;
+  display: inline-block;
+  position: relative;
+  background: white;
+  text-align: left;
+  line-height: 3em;
+  perspective: 300px;
+}
+.pure-toggle:before {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f5f5f5;
+  display: inline-block;
+  text-align: center;
+  font-family: 'FontAwesome', sans-serif;
+  content: "···";
+  color: #ffffff;
+  transition: all 1s ease-in-out;
+  transform-origin: 0% 50%;
+  include: box-shadow(0.1em 0 0.2em rgba(0,0,0,0.3));
+}
+
+.pure-toggle.brick {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-bottom-color: #e6e6e6;
+  box-shadow: inset 0 0.1em 0.03em rgba(0, 0, 0, 0.2), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.3), 0 0 2em rgba(255, 255, 255, 0.6);
+}
+.pure-toggle.brick:before {
+  margin-right: -1px;
+  margin-top: -0.14em;
+  box-shadow: 0 0.12em 0.01em #3ba5bc, 0 0.12em 0.3em rgba(59, 165, 188, 0.6), 0 0.12em 2em rgba(0, 0, 0, 0.3), -0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+  transition-duration: 0.66667s;
+  transition-timing-function: cubic-bezier(0.52, -0.41, 0.55, 1.46);
+}
+
+input[type='checkbox'] + .pure-toggle:before {
+  transform: rotateY(0deg);
+  background-color: #5EB9CC;
+}
+
+input[type='checkbox']:checked + .pure-toggle:before {
+  background-color: #cc0966;
+}
+input[type='checkbox']:checked + .pure-toggle.brick:before {
+  margin-right: 3em;
+  text-shadow: 0 0.05em 0 #9b074e;
+  transform: rotateY(0deg);
+  box-shadow: 0 0.12em 0.01em #9b074e, 0 0.12em 0.3em rgba(155, 7, 78, 0.6), 0 0.12em 2em rgba(0, 0, 0, 0.3), 0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+}

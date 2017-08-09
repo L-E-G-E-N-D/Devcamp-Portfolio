@@ -2,7 +2,29 @@
   <h1 class="cover-heading">Elevate</h1>
   <p class="lead">Hello, welcome to my page. Elevate Yourself, is my motto which means that you need to stay ahead of what you want, to earn what you want, and also to keep youself elevated</p>
   <p class="lead">
-    <%= link_to "About", about_me_path, class: "btn btn-lg btn-secondary" %>
+    <div class="container">
+      <%= link_to "About", about_me_path, class: "btn btn-1" %>
+    </div>
   </p>
 </div>
+<style>
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+ }
+.btn:hover {
+  background-position: right; 
+}
 
+.btn-1 {
+  background-image: linear-gradient(to left, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+</style>

@@ -267,7 +267,10 @@ body {
 #home-button {
   color:white;
   text-shadow:none;
-  font-family:  'Josefin Sans', sans-serif;;
+  font-family:  'Josefin Sans', sans-serif;
+}
+.btn {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Start of custom styles */ 
@@ -304,7 +307,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #666666;
+   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .dropdown:hover .dropdown-content {
